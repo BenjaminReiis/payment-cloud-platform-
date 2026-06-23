@@ -71,3 +71,59 @@ flowchart LR
     B --> D[JWT Auth]
     B --> E[Prisma ORM]
 
+
+cloudpay-platform/
+├─ backend/
+│  ├─ prisma/
+│  │  └─ schema.prisma
+│  ├─ src/
+│  │  ├─ config/
+│  │  │  └─ env.ts
+│  │  ├─ middlewares/
+│  │  │  └─ auth.ts
+│  │  ├─ routes/
+│  │  │  ├─ auth.routes.ts
+│  │  │  ├─ customer.routes.ts
+│  │  │  ├─ payment.routes.ts
+│  │  │  └─ dashboard.routes.ts
+│  │  ├─ services/
+│  │  │  ├─ auth.service.ts
+│  │  │  ├─ customer.service.ts
+│  │  │  ├─ payment.service.ts
+│  │  │  └─ dashboard.service.ts
+│  │  ├─ lib/
+│  │  │  └─ prisma.ts
+│  │  ├─ app.ts
+│  │  └─ server.ts
+│  ├─ package.json
+│  ├─ tsconfig.json
+│  ├─ .env.example
+│  └─ Dockerfile
+├─ frontend/
+│  ├─ src/
+│  │  ├─ components/
+│  │  │  ├─ Navbar.tsx
+│  │  │  ├─ ProtectedRoute.tsx
+│  │  │  └─ StatCard.tsx
+│  │  ├─ pages/
+│  │  │  ├─ Login.tsx
+│  │  │  ├─ Register.tsx
+│  │  │  ├─ Dashboard.tsx
+│  │  │  ├─ Customers.tsx
+│  │  │  └─ Payments.tsx
+│  │  ├─ services/
+│  │  │  └─ api.ts
+│  │  ├─ context/
+│  │  │  └─ AuthContext.tsx
+│  │  ├─ App.tsx
+│  │  ├─ main.tsx
+│  │  └─ index.css
+│  ├─ package.json
+│  ├─ tsconfig.json
+│  ├─ vite.config.ts
+│  ├─ .env.example
+│  └─ Dockerfile
+├─ docker-compose.yml
+└─ README.md
+
+
