@@ -64,3 +64,10 @@ cloudpay-platform/
 ├─ frontend/
 ├─ docker-compose.yml
 └─ README.md
+
+flowchart LR
+    A[Frontend React] --> B[API Node Express]
+    B --> C[PostgreSQL]
+    B --> D[JWT Auth]
+    B --> E[Prisma ORM]
+
